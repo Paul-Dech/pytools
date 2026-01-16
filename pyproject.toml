@@ -1,0 +1,17 @@
+[project]
+name = "pytools"
+version = "1.0.0"
+description = "Python toolbox for plotting, meshing, post-processing, and utilities"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy",
+    "scipy",
+    "matplotlib",
+]
+
+[project.scripts]
+pytools = "pytools.cli:main"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
